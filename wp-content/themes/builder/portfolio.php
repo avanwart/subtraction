@@ -37,15 +37,17 @@ Template Name: Portfolio Page
 				$url = $thumb['0'];
 			?>
 				<article class="col-xs-12 col-sm-4 col-md-4 col-lg-3">
-					<div class="inner" data-toggle="tooltip" data-placement="top" title="<?php the_field('blurb'); ?>" style="background: #fff url(<?=$url?>) center center no-repeat; background-size: 75% auto">
-						<?php $thumb_url; ?>
-						<h1><?php the_title(); ?></h1>
-						<?php /*the_post_thumbnail('medium'); */ ?>
-						<!-- <div class="caption">
-							<p><?php the_field('blurb'); ?></p>
-							<a href="http://<?php the_field('website'); ?>"><?php the_field('website'); ?></a>  
-						</div> -->
-					</div>
+					<a href="http://<?php the_field('website'); ?>" data-toggle="tooltip" data-placement="top" title="<?php the_field('blurb'); ?>" target="_blank">
+						<div class="inner" style="background: #fff url(<?=$url?>) center center no-repeat; background-size: 75% auto">
+							<?php $thumb_url; ?>
+							<h1><?php the_title(); ?></h1>
+							<?php /*the_post_thumbnail('medium'); */ ?>
+							<!-- <div class="caption">
+								<p><?php the_field('blurb'); ?></p>
+								<a href="http://<?php the_field('website'); ?>"><?php the_field('website'); ?></a>  
+							</div> -->
+						</div>
+					</a>
 				</article>
 
 			<!-- Close the loop -->
@@ -54,7 +56,7 @@ Template Name: Portfolio Page
 
       <script>
 	      jQuery(document).ready(function($){
-	      	$('.inner').tooltip();
+	      	$('article a').tooltip();
 	      });
       </script>
 
