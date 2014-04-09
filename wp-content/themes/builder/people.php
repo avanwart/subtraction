@@ -14,7 +14,7 @@ Template Name: People Page
 		</header>
 		<div class="row">
 			<div class="col-sm-12">
-				<h2>Partners</h2>
+				<h2 class="header">Partners</h2>
 			</div>
 		</div>
 		<div class="row partners">
@@ -29,18 +29,14 @@ Template Name: People Page
 				foreach( $myposts as $post ) :  setup_postdata($post); 
 			?>
 			<article class="col-xs-12 col-sm-4">
-				<div class="inner">
+				<div class="inner partner">
 					<h1><?php the_title(); ?></h1>
 					<h2><?php the_field('job_title'); ?></h2>
 					<?php the_post_thumbnail('medium'); ?>
 					<p><?php the_field('biography'); ?></p>
 					<p><strong>Education:</strong> <?php the_field('education'); ?></p>
 					<p><strong>Prior operational experience:</strong> <?php the_field('prior'); ?></p>
-					<p class="linkedin"><a href="<?php the_field('linkedin_url'); ?>">linkedin</a></p>
-					<div class="caption">
-						<p><?php the_field('blurb'); ?></p>
-						<a href="http://<?php the_field('website'); ?>"><?php the_field('website'); ?></a>
-					</div>
+					<a class="linkedin" href="<?php the_field('linkedin_url'); ?>">linkedin</a>
 				</div>
 			</article>
 
@@ -51,25 +47,27 @@ Template Name: People Page
 
 		<div class="row">
 			<div class="col-sm-12">
-				<h2>Team</h2>
+				<h2 class="header">Team</h2>
 			</div>
 		</div>
     <div class="row partners">
+    	<div class="col-sm-1 halfset">
+  			&nbsp;
+    	</div>
 			<!-- Start the Loop to query portfolio posts -->
 			<?php
 				global $post;
-				$args = array( 'posts_per_page' => 100, 'category' => '5', 'order' => 'ASC', 'orderby' => 'title' );
+				$args = array( 'posts_per_page' => 100, 'category' => '5', 'order' => 'ASC', 'orderby' => 'date' );
 				$myposts = get_posts( $args );
 				foreach( $myposts as $post ) :  setup_postdata($post); 
 			?>
 				<article class="col-xs-12 col-sm-4 col-md-4 col-lg-3">
-					<div class="inner">
-						<h1><?php the_title(); ?></h1>
+					<div class="inner team">
+						<h3><?php the_title(); ?></h3>
+						<h4><?php the_field('job_title'); ?></h4>
 						<?php the_post_thumbnail('medium'); ?>
-						<div class="caption">
-							<p><?php the_field('blurb'); ?></p>
-							<a href="http://<?php the_field('website'); ?>"><?php the_field('website'); ?></a>
-						</div>
+						<p><?php the_field('biography'); ?></p>
+						<a class="linkedin" href="http://<?php the_field('linkedin_url'); ?>">linkedin</a>
 					</div>
 				</article>
 

@@ -49,6 +49,15 @@ body
 			margin-left: -10px
 			border-width: 10px 10px 0
 			bottom: -2px
+	.col-sm-1.halfset
+		width: 12.5%
+	h2.header
+		font-size: 18px
+		color: #555
+		text-transform: uppercase
+		padding-bottom: 5px
+		border-bottom: 1px solid #dadada
+		margin-bottom: 20px
 
 	// PORTFOLIO PAGE
 	#hero
@@ -85,6 +94,8 @@ body
 				height: 150px
 				margin-bottom: 30px
 				position: relative
+				&:hover
+					border-color: #999
 				img
 					// position: absolute
 					// top: 50%
@@ -94,17 +105,60 @@ body
 				img
 					max-width: 90%
 					height: auto
+	
 
 	// TEAM PAGE
 	#people
 		background: #efefef
 		article
+			margin-bottom: 30px
 			.inner
 				background: white
 				border: 1px solid #dadada
-				border-top: 4px solid $blue
-				h1, h2, p
-					padding: 0 15px
+				position: relative
+				&.partner
+					min-height: 500px
+				&.team
+					min-height: 370px
+				&:before
+					content: ""
+					border-top: 4px solid $blue
+					position: absolute
+					display: block
+					left: 0px 
+					right: 0px
+					top: 0
+				h1, h2, h3, h4, p
+					padding: 0 20px
+				h1
+					font-size: 28px
+					margin: 20px 0 0
+				h2
+					color: #777
+					text-transform: uppercase
+					font-size: 17px
+					margin: 10px 0 20px
+				h3
+					font-size: 22px
+				h4
+					color: #777
+					text-transform: uppercase
+					font-size: 14px
+					margin: 10px 0
+				img
+					width: 100%
+					height: auto
+					margin: 15px 0
+				.linkedin
+					padding-left: 16px
+					background: url('../images/linkedin.png') 0 4px no-repeat
+					background-size: 12px 12px
+					text-align: right
+					position: absolute
+					bottom: 10px
+					right: 10px
+
+
 	
 
 @media screen and (max-width: 768px)
