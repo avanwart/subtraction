@@ -1,0 +1,110 @@
+$blue: #0072C4
+$black: #212121
+
+body
+	-webkit-font-smoothing: antialiased
+	font-family: 'Lato', sans-serif
+	padding-top: 72px
+
+	// HEADER
+	header
+		.navbar
+			background: white
+			border-bottom: 1px solid #222
+			.navbar-brand
+				text-indent: -9999px
+				width: 360px
+				height: 72px
+				background: url('../images/sc-logo-2x.png') center center no-repeat
+				background-size: 318px 23px
+			.navbar-collapse
+				.navbar-nav
+					li
+						a
+							padding: 26px 20px
+							font-size: 14px
+							color: #333
+							font-weight: 600
+							text-transform: uppercase
+							&:hover
+								color: $blue
+						&.active
+							a
+								color: $blue
+								background: transparent
+
+	// PORTFOLIO PAGE
+	#hero
+		padding: 30px 0
+		h1
+			font-size: 21px
+			color: $black
+			line-height: 1.5
+		blockquote
+			border: none
+			font-size: 21px
+			text-align: right
+			color: #999
+			line-height: 2
+			small
+				color: #777
+	#portfolio
+		background: #efefef
+		border-top: 1px solid #dadada
+		h1
+			font-size: 22px
+			color: #777
+			small
+				font-size: 16px
+		article
+			.inner
+				background: white
+				border: 1px solid #dadada
+				text-align: center
+				padding: 20px
+				height: 255px
+				margin-bottom: 30px
+				h1
+					display: none
+				img
+					max-width: 90%
+					height: auto
+	
+	// GENERAL CONTENT
+	#content
+		margin-top: 2em
+
+@media screen and (max-width: 768px)
+	.navbar
+		.navbar-toggle
+			border: none
+			margin-top: 16px
+			&:hover, &:focus, &:active
+				background: transparent
+				outline: none
+			.icon-bar
+				background-color: $black
+				border-radius: 0
+				height: 3px
+
+@media screen and (max-width: 480px)
+	body
+		header
+			.navbar
+				.navbar-collapse
+					width: 108%
+					background: #f6f6f6
+					.navbar-nav
+						li
+							width: 50%
+							float: left
+							text-align: center
+							a
+								padding: 15px 0
+				.navbar-brand
+					width: 320px
+					background-size: 280px 20px
+		#portfolio
+			article
+				.inner
+					height: auto

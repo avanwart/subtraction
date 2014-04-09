@@ -1,0 +1,87 @@
+body {
+  -webkit-font-smoothing: antialiased;
+  font-family: "Lato", sans-serif;
+  padding-top: 72px; }
+  body header .navbar {
+    background: white;
+    border-bottom: 1px solid #222222; }
+    body header .navbar .navbar-brand {
+      text-indent: -9999px;
+      width: 360px;
+      height: 72px;
+      background: url("../images/sc-logo-2x.png") center center no-repeat;
+      background-size: 318px 23px; }
+    body header .navbar .navbar-collapse .navbar-nav li a {
+      padding: 26px 20px;
+      font-size: 14px;
+      color: #333333;
+      font-weight: 600;
+      text-transform: uppercase; }
+      body header .navbar .navbar-collapse .navbar-nav li a:hover {
+        color: #0072c4; }
+    body header .navbar .navbar-collapse .navbar-nav li.active a {
+      color: #0072c4;
+      background: transparent; }
+  body #hero {
+    padding: 30px 0; }
+    body #hero h1 {
+      font-size: 21px;
+      color: #212121;
+      line-height: 1.5; }
+    body #hero blockquote {
+      border: none;
+      font-size: 21px;
+      text-align: right;
+      color: #999999;
+      line-height: 2; }
+      body #hero blockquote small {
+        color: #777777; }
+  body #portfolio {
+    background: #efefef;
+    border-top: 1px solid #dadada; }
+    body #portfolio h1 {
+      font-size: 22px;
+      color: #777777; }
+      body #portfolio h1 small {
+        font-size: 16px; }
+    body #portfolio article .inner {
+      background: white;
+      border: 1px solid #dadada;
+      text-align: center;
+      padding: 20px;
+      height: 255px;
+      margin-bottom: 30px; }
+      body #portfolio article .inner h1 {
+        display: none; }
+      body #portfolio article .inner img {
+        max-width: 90%;
+        height: auto; }
+  body #content {
+    margin-top: 2em; }
+
+@media screen and (max-width: 768px) {
+  .navbar .navbar-toggle {
+    border: none;
+    margin-top: 16px; }
+    .navbar .navbar-toggle:hover, .navbar .navbar-toggle:focus, .navbar .navbar-toggle:active {
+      background: transparent;
+      outline: none; }
+    .navbar .navbar-toggle .icon-bar {
+      background-color: #212121;
+      border-radius: 0;
+      height: 3px; } }
+@media screen and (max-width: 480px) {
+  body header .navbar .navbar-collapse {
+    width: 108%;
+    background: #f6f6f6; }
+    body header .navbar .navbar-collapse .navbar-nav li {
+      width: 50%;
+      float: left;
+      text-align: center; }
+      body header .navbar .navbar-collapse .navbar-nav li a {
+        padding: 15px 0; }
+  body header .navbar .navbar-brand {
+    width: 320px;
+    background-size: 280px 20px; }
+  body #portfolio article .inner {
+    height: auto; } }
