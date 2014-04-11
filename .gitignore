@@ -1,5 +1,10 @@
 wp-config.php
 people.php
+<<<<<<< HEAD
 portfolio.php
 press.php
 
+=======
+press.php
+portfolio.php
+>>>>>>> 3be1f7edb4ba221649591220d591ebb835b7d3a0
