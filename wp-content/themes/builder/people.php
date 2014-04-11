@@ -10,15 +10,15 @@ Template Name: People Page
 	<div class="container">
 		<header>
 			<h1><?php the_title(); ?></h1>
-			<p><?php the_field('team_description'); ?></p>
+			<p class="mission"><?php the_field('team_description'); ?></p>
 		</header>
 		<div class="row">
-			<div class="col-sm-12">
+			<div class="col-lg-8 col-md-12 col-lg-offset-2">
 				<h2 class="header">Partners</h2>
 			</div>
 		</div>
 		<div class="row partners">
-			<div class="col-sm-2">
+			<div class="col-lg-2">
 				&nbsp;
 			</div>
 			<!-- Start the Loop to query portfolio posts -->
@@ -28,7 +28,7 @@ Template Name: People Page
 				$myposts = get_posts( $args );
 				foreach( $myposts as $post ) :  setup_postdata($post); 
 			?>
-			<article class="col-xs-12 col-sm-4">
+			<article class="col-xs-12 col-lg-4 col-md-6 col-sm-6">
 				<div class="inner partner">
 					<h1><?php the_title(); ?></h1>
 					<h2><?php the_field('job_title'); ?></h2>
@@ -46,12 +46,12 @@ Template Name: People Page
     </div>
 
 		<div class="row">
-			<div class="col-sm-12">
+			<div class="col-lg-9 col-lg-offset-1 col-md-12 halfset">
 				<h2 class="header">Team</h2>
 			</div>
 		</div>
     <div class="row partners">
-    	<div class="col-sm-1 halfset">
+    	<div class="col-lg-1 halfset">
   			&nbsp;
     	</div>
 			<!-- Start the Loop to query portfolio posts -->
