@@ -362,17 +362,34 @@ body {
       border-radius: 0;
       height: 3px; } }
 @media screen and (max-width: 480px) {
-  body header .navbar .navbar-collapse {
-    width: 108%;
-    background: #f6f6f6; }
-    body header .navbar .navbar-collapse .navbar-nav li {
-      width: 50%;
-      float: left;
-      text-align: center; }
-      body header .navbar .navbar-collapse .navbar-nav li a {
-        padding: 15px 0; }
-  body header .navbar .navbar-brand {
-    width: 320px;
-    background-size: 280px 20px; }
-  body #portfolio article .inner {
-    height: 200px; } }
+  body {
+    padding-top: 51px; }
+    body header .navbar {
+      height: 51px; }
+      body header .navbar .navbar-toggle {
+        margin-top: 8px; }
+      body header .navbar .navbar-collapse {
+        width: 111%;
+        background: #f6f6f6;
+        border: none;
+        border-bottom: 1px solid #aaaaaa; }
+        body header .navbar .navbar-collapse .navbar-nav li {
+          width: 50%;
+          float: left;
+          text-align: center; }
+          body header .navbar .navbar-collapse .navbar-nav li a {
+            padding: 15px 0; }
+      body header .navbar .navbar-brand {
+        height: 51px;
+        background-position: center center;
+        width: 260px;
+        background-size: 220px 16px; }
+    body #hero {
+      padding: 0; }
+      body #hero h1 {
+        font-size: 17px; }
+      body #hero blockquote {
+        font-size: 15px;
+        line-height: 1.4; }
+    body #portfolio article .inner {
+      height: 200px; } }

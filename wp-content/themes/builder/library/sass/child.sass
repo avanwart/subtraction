@@ -429,11 +429,17 @@ body
 
 @media screen and (max-width: 480px)
 	body
+		padding-top: 51px
 		header
 			.navbar
+				height: 51px
+				.navbar-toggle
+					margin-top: 8px
 				.navbar-collapse
-					width: 108%
+					width: 111%
 					background: #f6f6f6
+					border: none
+					border-bottom: 1px solid #aaa
 					.navbar-nav
 						li
 							width: 50%
@@ -442,8 +448,17 @@ body
 							a
 								padding: 15px 0
 				.navbar-brand
-					width: 320px
-					background-size: 280px 20px
+					height: 51px
+					background-position: center center
+					width: 260px
+					background-size: 220px 16px
+		#hero
+			padding: 0
+			h1
+				font-size: 17px
+			blockquote
+				font-size: 15px
+				line-height: 1.4
 		#portfolio
 			article
 				.inner
