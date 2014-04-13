@@ -22,7 +22,6 @@ body {
       body header .navbar .navbar-collapse .navbar-nav li a:hover {
         color: #0072c4; }
     body header .navbar .navbar-collapse .navbar-nav li.active a {
-      color: #0072c4;
       background: transparent; }
     body header .navbar .navbar-toggle {
       border: none;
