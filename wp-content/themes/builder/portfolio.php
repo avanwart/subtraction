@@ -48,7 +48,7 @@ Template Name: Portfolio Page
 								<!--<h3>About <?php the_title(); ?></h3>-->
 								<p><?php the_field('blurb'); ?></p>
 								<p class="site">
-									<a href="<?php the_field('website'); ?>">Visit website &raquo;</a>
+									<a target="_blank" href="http://<?php the_field('website'); ?>">Visit website &raquo;</a>
 								</p>
 		          </div> 
 		        </div>
