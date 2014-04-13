@@ -401,20 +401,22 @@ body {
         line-height: 1.4; }
     body #portfolio article .inner {
       height: 200px; }
-    body .flip .card {
-      height: auto;
-      height: 180px; }
-      body .flip .card .face {
+    body .flip {
+      margin-bottom: 20px; }
+      body .flip .card {
         height: auto;
-        min-height: 180px; }
-        body .flip .card .face p {
-          font-size: 18px; }
-        body .flip .card .face .site {
-          right: 0;
-          bottom: 0; }
-          body .flip .card .face .site a {
-            display: block;
-            text-align: center;
-            padding: 8px 0;
-            border-top: 1px solid #efefef;
-            background: #f9f9f9; } }
+        height: 180px; }
+        body .flip .card .face {
+          height: auto;
+          min-height: 180px; }
+          body .flip .card .face p {
+            font-size: 18px; }
+          body .flip .card .face .site {
+            right: 0;
+            bottom: 0; }
+            body .flip .card .face .site a {
+              display: block;
+              text-align: center;
+              padding: 8px 0;
+              border-top: 1px solid #efefef;
+              background: #f9f9f9; } }
