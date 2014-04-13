@@ -24,7 +24,7 @@ Template Name: People Page
 			<!-- Start the Loop to query portfolio posts -->
 			<?php
 				global $post;
-				$args = array( 'posts_per_page' => 100, 'category' => '3', 'order' => 'ASC', 'orderby' => 'title' );
+				$args = array( 'posts_per_page' => 100, 'category_name' => 'partners', 'order' => 'ASC', 'orderby' => 'title' );
 				$myposts = get_posts( $args );
 				foreach( $myposts as $post ) :  setup_postdata($post); 
 			?>
@@ -57,7 +57,7 @@ Template Name: People Page
 			<!-- Start the Loop to query portfolio posts -->
 			<?php
 				global $post;
-				$args = array( 'posts_per_page' => 100, 'category' => '5', 'order' => 'ASC', 'orderby' => 'date' );
+				$args = array( 'posts_per_page' => 100, 'category_name' => 'team', 'order' => 'ASC', 'orderby' => 'date' );
 				$myposts = get_posts( $args );
 				foreach( $myposts as $post ) :  setup_postdata($post); 
 			?>
