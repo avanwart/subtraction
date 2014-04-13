@@ -82,6 +82,69 @@ body
 		border-bottom: 1px solid #dadada
 		margin-bottom: 20px
 
+	// FLIP CARDS
+	.flip
+		-webkit-perspective: 532
+		-moz-perspective: 532
+		position: relative
+		margin-bottom: 30px
+	  
+	.flip .card.flipped
+		-webkit-transform: rotateY(-180deg)
+		-moz-transform: rotateY(-180deg)
+	.flip .card
+		width: 100%
+		height: 150px
+		-webkit-transform-style: preserve-3d
+		-webkit-transition: 0.5s
+		-moz-transform-style: preserve-3d
+		-moz-transition: 0.5s
+	.flip .card .face
+		width: 100%
+		height: 150px
+		position: absolute
+		-webkit-backface-visibility: hidden 
+		-moz-backface-visibility: hidden 
+	.flip .card .face.front
+		z-index: 2
+	.flip .card .front
+		border: 1px solid #dadada
+		background: #fff
+		position: absolute
+		z-index: 1
+		color: white
+		cursor: pointer
+		padding: 6px
+		h1
+			text-indent: -9999px
+		.ribbon
+			display: none
+			position: absolute
+			top: -5px
+			right: -6px
+		&.Yes
+			.ribbon
+				display: block
+		&:hover
+			border-color: #aaa
+	  
+	.flip .card .back
+		border: 1px solid #dadada
+		-webkit-transform: rotateY(-180deg)
+		-moz-transform: rotateY(-180deg)
+		background: #fff
+		cursor: pointer
+		padding: 20px
+		-webkit-font-smoothing: antialiased
+		.site
+			text-align: right
+			left: 0
+			right: 15px
+			position: absolute
+			bottom: 10px
+			margin-bottom: 0
+	  
+
 	// PORTFOLIO PAGE
 	#hero
 		padding: 30px 0
@@ -242,7 +305,7 @@ body
 				margin: 1px 3px 0 0
 				vertical-align: top
 				&:checked
-					content: "&#x2714;"
+					content: "&#x2714"
 					background: url("../images/checkmark.png") no-repeat bottom
 					background-size: 12px 14px
 	#articles

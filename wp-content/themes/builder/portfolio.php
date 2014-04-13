@@ -37,32 +37,39 @@ Template Name: Portfolio Page
 				$url = $thumb['0'];
 			?>
 				<article class="col-xs-12 col-sm-4 col-md-4 col-lg-3">
-					<a href="http://<?php the_field('website'); ?>" data-toggle="tooltip" data-placement="top" title="<?php the_field('blurb'); ?>" target="_blank">
-						<div class="inner" style="background: #fff url(<?=$url?>) center center no-repeat; background-size: 75% auto">
-							<?php $thumb_url; ?>
-							<h1><?php the_title(); ?></h1>
-							<?php /*the_post_thumbnail('medium'); */ ?>
-							<!-- <div class="caption">
+					<div class="flip">
+		        <div class="card"> 
+		          <div class="face front <?php the_field('acquired'); ?>" style="background: #fff url(<?=$url?>) center center no-repeat; background-size: 75% auto;">
+		          	<img class="ribbon" src="<?php bloginfo('template_directory'); ?>/library/images/acquired-ribbon-sm.png" alt="" width="85" height="85">
+		          	<?php $thumb_url; ?> 
+		        		<h1><?php the_title(); ?></h1>
+		          </div> 
+		          <div class="face back"> 
+								<!--<h3>About <?php the_title(); ?></h3>-->
 								<p><?php the_field('blurb'); ?></p>
-								<a href="http://<?php the_field('website'); ?>"><?php the_field('website'); ?></a>  
-							</div> -->
-						</div>
-					</a>
-				</article>
+								<p class="site">
+									<a href="<?php the_field('website'); ?>">Visit website &raquo;</a>
+								</p>
+		          </div> 
+		        </div>
+		      </div>
+	      </article>
 
 			<!-- Close the loop -->
 			<?php endforeach; ?>
       <?php wp_reset_postdata(); ?>
 
-      <script>
-	      jQuery(document).ready(function($){
-	      	$('article a').tooltip();
-	      });
-      </script>
-
 		</div>
 	</div>
 </section>
-
+<script>
+	jQuery(document).ready(function($){
+	  $('.flip').click(function(){
+	    $(this).find('.card').addClass('flipped').mouseleave(function(){
+	      $(this).removeClass('flipped');
+	    });
+	  });
+	});
+</script>
 
 <?php get_footer(); ?>
