@@ -257,7 +257,7 @@ body
 	// PRESS
 	#press
 		background: #efefef
-		padding: 30px 0
+		padding: 30px 0 0
 		#filters-button
 			cursor: pointer
 			-webkit-user-select: none
@@ -283,20 +283,23 @@ body
 				margin-top: -30px
 			.uwpqsf_class
 				overflow: auto
-				margin: 10px 0
+				margin: 0
 				padding: 0
 			.uwpqsf_submit
 
 			.btn-block
 				margin: 0 0 20px
 				border-radius: 0
-				background: $blue
-				color: white
+				color: $black
+				font-size: 15px
 				&:hover
-					background: darken($blue, 5%)
+					background: lighten($black, 22%)
+					color: white
 			#uwpqsf_id_btn
 				display: block
-				width: 30%
+				padding: 6px 18px
+				font-size: 16px
+				width: auto
 				margin: 0 auto 10px
 				border-radius: 2px
 				border: 1px solid rgba(0, 0, 0, .2)
@@ -316,6 +319,9 @@ body
 					content: "&#x2714"
 					background: url("../images/checkmark.png") no-repeat bottom
 					background-size: 12px 14px
+			#chosenFilter
+				padding: 20px 30px
+				font-size: 15px
 	#articles
 		background: #efefef
 		padding: 30px 0
@@ -374,6 +380,14 @@ body
 					.date, .author
 						color: #999
 						font-size: 13px
+	// CONTACT
+	#contact
+		background: #efefef
+		padding: 30px 0 50px
+		.mantra
+			p
+				font-size: 18px
+				line-height: 1.6
 
 	// FOOTER
 	.footer

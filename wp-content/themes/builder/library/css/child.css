@@ -224,7 +224,7 @@ body {
           right: 10px; }
   body #press {
     background: #efefef;
-    padding: 30px 0; }
+    padding: 30px 0 0; }
     body #press #filters-button {
       cursor: pointer;
       -webkit-user-select: none;
@@ -250,18 +250,21 @@ body {
         margin-top: -30px; }
       body #press .filter-box .uwpqsf_class {
         overflow: auto;
-        margin: 10px 0;
+        margin: 0;
         padding: 0; }
       body #press .filter-box .btn-block {
         margin: 0 0 20px;
         border-radius: 0;
-        background: #0072c4;
-        color: white; }
+        color: #212121;
+        font-size: 15px; }
         body #press .filter-box .btn-block:hover {
-          background: #0063ab; }
+          background: #595959;
+          color: white; }
       body #press .filter-box #uwpqsf_id_btn {
         display: block;
-        width: 30%;
+        padding: 6px 18px;
+        font-size: 16px;
+        width: auto;
         margin: 0 auto 10px;
         border-radius: 2px;
         border: 1px solid rgba(0, 0, 0, 0.2);
@@ -281,6 +284,9 @@ body {
           content: "&#x2714";
           background: url("../images/checkmark.png") no-repeat bottom;
           background-size: 12px 14px; }
+      body #press .filter-box #chosenFilter {
+        padding: 20px 30px;
+        font-size: 15px; }
   body #articles {
     background: #efefef;
     padding: 30px 0; }
@@ -332,6 +338,12 @@ body {
       body #articles .search-results article .inner .date, body #articles .search-results article .inner .author {
         color: #999999;
         font-size: 13px; }
+  body #contact {
+    background: #efefef;
+    padding: 30px 0 50px; }
+    body #contact .mantra p {
+      font-size: 18px;
+      line-height: 1.6; }
   body .footer {
     margin-top: 0;
     border: none;

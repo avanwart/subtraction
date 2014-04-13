@@ -56,7 +56,7 @@ Template Name: Press Page
 
       <script>
 	      jQuery(document).ready(function($){
-	      	$('article a').tooltip();
+	      	$('.uwpqsf_class').hide();
 	      });
       </script>
 

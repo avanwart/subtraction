@@ -40,6 +40,11 @@ get_header(); ?>
 			<div class="search-results row"></div>
 		</div>
 	</section>
+	<script>
+    jQuery(document).ready(function($){
+    	$('.uwpqsf_class').hide();
+    });
+  </script>
 
 <?php
  // get_sidebar();
