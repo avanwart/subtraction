@@ -67,7 +67,7 @@ Template Name: People Page
 						<h4><?php the_field('job_title'); ?></h4>
 						<?php the_post_thumbnail('medium'); ?>
 						<p><?php the_field('biography'); ?></p>
-						<a class="linkedin" href="http://<?php the_field('linkedin_url'); ?>">linkedin</a>
+						<a class="linkedin" href="<?php the_field('linkedin_url'); ?>">linkedin</a>
 					</div>
 				</article>
 
