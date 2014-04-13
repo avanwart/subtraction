@@ -340,7 +340,8 @@ body {
         font-size: 13px; }
   body #contact {
     background: #efefef;
-    padding: 30px 0 50px; }
+    padding: 30px 0 50px;
+    min-height: 510px; }
     body #contact .mantra p {
       font-size: 18px;
       line-height: 1.6;
