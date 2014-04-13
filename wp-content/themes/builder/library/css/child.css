@@ -78,9 +78,9 @@ body {
     width: 100%;
     height: 150px;
     -webkit-transform-style: preserve-3d;
-    -webkit-transition: 0.5s;
+    -webkit-transition: 0.35s;
     -moz-transform-style: preserve-3d;
-    -moz-transition: 0.5s; }
+    -moz-transition: 0.35s; }
   body .flip .card .face {
     width: 100%;
     height: 150px;
@@ -114,15 +114,23 @@ body {
     -moz-transform: rotateY(-180deg);
     background: white;
     cursor: pointer;
-    padding: 20px;
+    padding: 15px;
     -webkit-font-smoothing: antialiased; }
+    body .flip .card .back:before {
+      content: "";
+      position: absolute;
+      left: 0;
+      right: 0;
+      top: 0;
+      border-top: 3px solid #212121; }
     body .flip .card .back .site {
       text-align: right;
       left: 0;
       right: 15px;
       position: absolute;
       bottom: 10px;
-      margin-bottom: 0; }
+      margin-bottom: 0;
+      line-height: 1.5; }
   body #hero {
     padding: 30px 0; }
     body #hero h1 {
@@ -392,4 +400,21 @@ body {
         font-size: 15px;
         line-height: 1.4; }
     body #portfolio article .inner {
-      height: 200px; } }
+      height: 200px; }
+    body .flip .card {
+      height: auto;
+      height: 180px; }
+      body .flip .card .face {
+        height: auto;
+        min-height: 180px; }
+        body .flip .card .face p {
+          font-size: 18px; }
+        body .flip .card .face .site {
+          right: 0;
+          bottom: 0; }
+          body .flip .card .face .site a {
+            display: block;
+            text-align: center;
+            padding: 8px 0;
+            border-top: 1px solid #efefef;
+            background: #f9f9f9; } }
