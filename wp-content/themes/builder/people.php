@@ -36,7 +36,7 @@ Template Name: People Page
 					<p><?php the_field('biography'); ?></p>
 					<p><strong>Education:</strong> <?php the_field('education'); ?></p>
 					<p><strong>Prior operational experience:</strong> <?php the_field('prior'); ?></p>
-					<a class="linkedin" href="<?php the_field('linkedin_url'); ?>">linkedin</a>
+					<a class="linkedin" href="<?php the_field('linkedin_url'); ?>" target="_blank">linkedin</a>
 				</div>
 			</article>
 
@@ -67,7 +67,7 @@ Template Name: People Page
 						<h4><?php the_field('job_title'); ?></h4>
 						<?php the_post_thumbnail('medium'); ?>
 						<p><?php the_field('biography'); ?></p>
-						<a class="linkedin" href="<?php the_field('linkedin_url'); ?>">linkedin</a>
+						<a class="linkedin" href="<?php the_field('linkedin_url'); ?>" target="_blank">linkedin</a>
 					</div>
 				</article>
 
