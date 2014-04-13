@@ -64,11 +64,15 @@ Template Name: Portfolio Page
 </section>
 <script>
 	jQuery(document).ready(function($){
-	  $('.flip').click(function(){
-	    $(this).find('.card').addClass('flipped').mouseleave(function(){
+	  $('.face.front').click(function(){
+	    $(this).parent('.card').addClass('flipped').mouseleave(function(){
 	      $(this).removeClass('flipped');
 	    });
 	  });
+	  $('.face.back').click(function(){
+      $(this).parent('.card').removeClass('flipped');
+    });
+
 	});
 </script>
 
