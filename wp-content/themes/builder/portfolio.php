@@ -40,7 +40,7 @@ Template Name: Portfolio Page
 					<div class="flip">
 		        <div class="card"> 
 		          <div class="face front <?php the_field('acquired'); ?>" style="background: #fff url(<?=$url?>) center center no-repeat; background-size: 75% auto;">
-		          	<img class="ribbon" src="<?php bloginfo('template_directory'); ?>/library/images/acquired-ribbon-sm.png" alt="" width="85" height="85">
+		          	<img class="ribbon" src="<?php bloginfo('template_directory'); ?>/library/images/acquired-ribbon-sm-bw.png" alt="" width="85" height="85">
 		          	<?php $thumb_url; ?> 
 		        		<h1><?php the_title(); ?></h1>
 		          </div> 
