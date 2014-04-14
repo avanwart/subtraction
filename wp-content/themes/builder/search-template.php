@@ -21,7 +21,7 @@ get_header(); ?>
 		</div>
 	</div>
 		<div class="row">
-			<div class="col-sm-12 col-md-8 col-md-offset-2">
+			<div class="col-sm-12" id="press-filters">
 				<?php while ( have_posts() ) : the_post(); ?>
 				<!-- Display the Ultimate WP Query Search Filter Form -->
 				<article id="post-<?php the_ID(); ?>" <?php post_class(); ?>>

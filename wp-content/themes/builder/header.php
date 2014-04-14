@@ -52,9 +52,10 @@
 								<!-- .navbar-toggle is used as the toggle for collapsed navbar content -->
 								<div class="navbar-header">
 									<button type="button" class="navbar-toggle" data-toggle="collapse" data-target=".navbar-responsive-collapse">
-										<span class="icon-bar"></span>
-										<span class="icon-bar"></span>
-										<span class="icon-bar"></span>
+										<span class="icon-bar one"></span>
+										<span class="icon-bar two"></span>
+										<span class="icon-bar three"></span>
+										<span class="icon-bar four"></span>
 									</button>
 
 									<a class="navbar-brand" href="<?php bloginfo( 'url' ) ?>/" title="<?php bloginfo( 'name' ) ?>" rel="homepage"><?php bloginfo( 'name' ) ?></a>
