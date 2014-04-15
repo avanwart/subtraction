@@ -139,8 +139,8 @@ $('input#uwpqsf_id_btn:button').click(function(){
 	if (win_width > 349) {  
 
 			
-				taxoCompany = $(".taxolabel-0").text()
-				taxoCategory = $(".taxolabel-1").text()
+				taxoCompany = $("article > .entry-content .taxolabel-0").text()
+				taxoCategory = $("article > .entry-content .taxolabel-1").text()
 
 			
 				var tax0Array = $(".tax-check-0 label").map(function() {
@@ -178,7 +178,7 @@ $('input#uwpqsf_id_btn:button').click(function(){
 					if (checkedLabel == value) {
 
 						
-						resultCompany =  "<span class='taxo-0'> X &nbsp;" + taxoCompany + "&nbsp;&nbsp;&nbsp;&nbsp;</span>";
+						resultCompany =  "<span class='taxo-0'> &times; &nbsp;" + taxoCompany + "&nbsp;&nbsp;&nbsp;&nbsp;</span>";
 
 						return;
 					}
@@ -198,7 +198,7 @@ $('input#uwpqsf_id_btn:button').click(function(){
 
 						
 
-						resultCategory =  "<span class='taxo-1' > X &nbsp;" + taxoCategory + "&nbsp;&nbsp;&nbsp;&nbsp;</span>";
+						resultCategory =  "<span class='taxo-1' > &times; &nbsp;" + taxoCategory + "&nbsp;&nbsp;&nbsp;&nbsp;</span>";
 
 						return;
 					}
