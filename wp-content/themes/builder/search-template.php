@@ -30,23 +30,20 @@ get_header(); ?>
 						<?php wp_link_pages( array( 'before' => '<div class="page-links"><span class="page-links-title">' . __( 'Pages:', 'twentythirteen' ) . '</span>', 'after' => '</div>', 'link_before' => '<span>', 'link_after' => '</span>' ) ); ?>
 					</div><!-- .entry-content -->
 					<!-- FILTERS FOR MOBILE -->
-					<a class="btn btn-primary visible-xs" data-toggle="modal" href='#modal-id'>Filters</a>
-					<div class="modal fade" id="modal-id">
+					<a id="mobile-filters" class="btn btn-primary visible-xs" data-toggle="modal" href='#modal-id'>Filters</a>
+					<div class="modal" id="modal-id">
 						<div class="modal-dialog">
 							<div class="modal-content">
-								<div class="modal-header">
-									<button type="button" class="close" data-dismiss="modal" aria-hidden="true">&times;</button>
-									<h4 class="modal-title">Modal title</h4>
-								</div>
 								<div class="modal-body">
 									<div class="entry-content filter-box" style="padding: 0 !important;">
+										<!-- <a href="#" id="clear">Clear</a>
+										<a href="#" id="cancel">Cancel</a> -->
 										<?php the_content( __( 'Continue reading <span class="meta-nav">&rarr;</span>', 'twentythirteen' ) ); ?>
 										<?php wp_link_pages( array( 'before' => '<div class="page-links"><span class="page-links-title">' . __( 'Pages:', 'twentythirteen' ) . '</span>', 'after' => '</div>', 'link_before' => '<span>', 'link_after' => '</span>' ) ); ?>
 									</div><!-- .entry-content -->
 								</div>
 								<div class="modal-footer">
 									<button type="button" class="btn btn-default" data-dismiss="modal">Close</button>
-									<button type="button" class="btn btn-primary">Save changes</button>
 								</div>
 							</div><!-- /.modal-content -->
 						</div><!-- /.modal-dialog -->
@@ -66,6 +63,8 @@ get_header(); ?>
 	<script>
     jQuery(document).ready(function($){
     	$('.uwpqsf_class').hide();
+    	$('.modal .uwpqsf_class').show();
+    	$('#reset_filter a').attr('href', '/press');
     });
   </script>
 

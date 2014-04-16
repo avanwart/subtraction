@@ -195,9 +195,8 @@ if(!class_exists('uwpqsfprocess')){
 		$args = array(
 			'post_type' => $cpt,
 			'post_status' => 'publish',
-			'meta_key'=> $ordermeta,
-			'orderby' => $ordertype,
-			'order' => $order, 
+			'orderby'		=> 'date',
+			'order'			=> 'ASC',
 			'paged'=> $paged,
 			'posts_per_page' => $number,
 			'meta_query' => $get_meta,						
@@ -257,9 +256,8 @@ if(!class_exists('uwpqsfprocess')){
 		$args = array(
 			'post_type' => $cpt,
 			'post_status' => 'publish',
-			'meta_key'=> $ordermeta,
-			'orderby' => $ordertype,
-			'order' => $order, 
+			'orderby'		=> 'date',
+			'order'			=> 'ASC',
 			'paged'=> $pagenumber,
 			'posts_per_page' => $number,
 			'meta_query' => $get_meta,						

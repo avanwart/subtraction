@@ -343,11 +343,16 @@ body
 			#chosenFilter
 				padding: 0 30px
 				font-size: 15px
+				span
+					cursor: pointer
+					&:hover
+						color: $blue
 			.togglecheck > span
 				color: #999
 				text-transform: uppercase
 				font-size: 14px
 				margin: 10px 0 5px
+		
 	#articles
 		background: #efefef
 		padding: 30px 0
@@ -377,6 +382,7 @@ body
 							font-size: 18px
 							margin: 0
 							font-weight: 500
+							height: 50px
 							a
 								color: $darkBlue
 						// position: absolute
@@ -480,7 +486,7 @@ body
 @media screen and (max-width: 480px)
 	body
 		padding-top: 51px
-		#press-filter
+		
 		header
 			.navbar
 				height: 51px
@@ -542,27 +548,83 @@ body
 				.inner
 					p
 						font-size: 16px
+		article
+			.inner
+				.entry-header
+					h1
+						height: auto
 		#press
+			padding: 0
+			// MOBILE FILTERS
+			#mobile-filters
+				position: fixed
+				bottom: 25px
+				left: 50%
+				margin-left: -51px
+				background: rgba(0, 0, 0, .65)
+				color: #fff
+				border: 1px solid rgba(0, 0, 0, .2)
+				z-index: 99
+				padding: 6px 30px
+			.modal
+				.modal-dialog
+					padding: 0
+					height: 100%
+					.modal-content
+						border-radius: 0
+						height: 100%
+						border: none
+						.modal-body
+							height: 100%
+							padding: 0
+							.filter-box
+								label
+									width: 50%
 			.filter-box
+				.togglecheck > span
+					text-align: center
 				.uform_title
 					margin-left: -15px
 					margin-right: -15px
-					margin-bottom: 60px
-					.uform_title > div
-						display: block
-						width: 100%
-						position: relative
-						margin: 0
-						text-align: center
+					margin-bottom: 20px
+					text-align: center
+					padding-top: 10px
+					#filters-button
+						background: none
+						color: #777
+					#filter-float
+						top: 14px
+						position: absolute
+						left: 50%
+						margin-left: -30px
+						font-weight: 400
+				.uform_title > div
+					width: 100%!important
 					#c_filter-float, #reset_filter
-						display: inline-block
+						position: absolute
+						top: 5px
 						margin: 15px
+						font-size: 14px
+						color: #777
+						font-weight: 400
+					#c_filter-float
+						right: 0
+					#reset_filter
+						left: 0
+			.entry-content
+				height: 100%
 				#uwpqsf_id
-					padding: 30px 15px 0
+					padding: 60px 15px 0
+					height: 100%
+				#uwpqsf_id_btn
+					width: 100%
+					bottom: 0
+					margin: 0
 				[class*='tax-check-']
 					label
-						width: 33%
+						width: 50%
 						font-weight: 400
+						margin-bottom: 15px
 
 		.footer
 			nav
