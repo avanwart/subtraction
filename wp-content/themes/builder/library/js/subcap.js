@@ -345,7 +345,10 @@ $('input#uwpqsf_id_btn:button').click(function(){
 		$(this).css("text-decoration","none")
 	});
 }
-	  
+
+$('#reset_filter a').attr('href', '/press');
+
+
 }); 
 
 });  // End Document Ready
