@@ -9,45 +9,41 @@ Template Name: Blog Page
 <section id="blog">
 	<div class="container">
 		<header>
-			<h1><?php the_title(); ?> <small>(alphabetical)</small></h1>
+			<h1><?php the_title(); ?></h1>
 		</header>
 		<div class="row">
-			<!-- Start the Loop to query portfolio posts -->
-			<?php
-				global $post;
-				$args = array( 'posts_per_page' => 100, 'category_name' => 'blog', 'order' => 'ASC', 'orderby' => 'title' );
-				$myposts = get_posts( $args );
-				foreach( $myposts as $post ) :  setup_postdata($post);
-			?>
-			<?php
-				$thumb = wp_get_attachment_image_src( get_post_thumbnail_id($post->ID), 'medium' );
-				$url = $thumb['0'];
-			?>
-				<article class="col-sm-8 col-sm-offset-2">
-					<div class="flip">
-		        <div class="card"> 
-		          <div class="face front <?php the_field('acquired'); ?>" style="background: #fff url(<?=$url?>) center center no-repeat; background-size: 75% auto;">
-		          	<img class="ribbon" src="<?php bloginfo('template_directory'); ?>/library/images/acquired-ribbon-sm-bw.png" alt="" width="85" height="85">
-		          	<?php $thumb_url; ?> 
-		        		<h1><?php the_title(); ?></h1>
-		          </div> 
-		          <div class="face back"> 
-								<!--<h3>About <?php the_title(); ?></h3>-->
-								<p><?php the_field('blurb'); ?></p>
-								<p class="site">
-									<a target="_blank" href="http://<?php the_field('website'); ?>">Visit website &raquo;</a>
-								</p>
-		          </div> 
-		        </div>
-		      </div>
-	      </article>
-
-			<!-- Close the loop -->
-			<?php endforeach; ?>
-      <?php wp_reset_postdata(); ?>
-
+			<div class="col-sm-12 col-md-10 col-md-offset-1 col-lg-8 col-lg-offset-2">
+				<!-- Start the Loop -->
+				<?php
+					global $post;
+					$args = array( 'posts_per_page' => 100, 'category_name' => 'blog', 'order' => 'ASC', 'orderby' => 'title' );
+					$myposts = get_posts( $args );
+					foreach( $myposts as $post ) :  setup_postdata($post);
+				?>
+				<?php
+					$thumb = wp_get_attachment_image_src( get_post_thumbnail_id($post->ID), 'medium' );
+					$url = $thumb['0'];
+				?>
+				<article class="inner">
+					<div class="row">
+						<div class="col-sm-4 col-xs-5 left">
+							<div class="thumb" style="background: #fff url(<?=$url?>) center center no-repeat; background-size: cover;">&nbsp;</div>
+						</div>
+						<div class="col-sm-8 col-xs-7 right">
+							<h1><?php the_title(); ?></h1>
+							<p class="byline vcard"><?php
+   						printf( __( 'Posted <time class="updated" datetime="%1$s" pubdate>%2$s</time> by <span class="author">%3$s</span> <span class="amp"></span>', 'bonestheme' ), get_the_time('Y-m-j'), get_the_time(get_option('date_format')), bones_get_the_author_posts_link());
+   						?></p>
+							<p><?php the_excerpt(); ?></p>
+						</div>
+					</div>
+		    </article>
+		    <?php endforeach; ?>
+      	<?php wp_reset_postdata(); ?>
+			</div>
 		</div>
-	</div>
+	<!-- Close the loop -->
+  </div>
 </section>
 <script>
 	jQuery(document).ready(function($){

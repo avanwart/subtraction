@@ -379,6 +379,42 @@ body {
       font-size: 18px;
       line-height: 1.6;
       margin-bottom: 24px; }
+  body #blog {
+    background: #efefef;
+    padding: 30px 0; }
+    body #blog article {
+      padding: 15px;
+      margin-bottom: 20px;
+      position: relative;
+      overflow: visible;
+      background: white;
+      border: 1px solid #dadada; }
+      body #blog article:after {
+        content: "";
+        display: block;
+        position: absolute;
+        border-left: 3px solid #212121;
+        top: 0;
+        bottom: 0;
+        left: -3px; }
+      body #blog article .left .thumb {
+        width: 100%;
+        height: 150px; }
+      body #blog article .right {
+        padding-left: 5px; }
+        body #blog article .right h1 {
+          margin-top: 0;
+          font-size: 25px; }
+        body #blog article .right p {
+          font-size: 14px;
+          line-height: 1.5;
+          margin-bottom: 0; }
+          body #blog article .right p.byline {
+            font-size: 11px;
+            text-transform: uppercase;
+            border-bottom: 1px solid #f4f4f4;
+            padding-bottom: 5px;
+            margin-bottom: 5px; }
   body .footer {
     margin-top: 0;
     border: none;
@@ -406,19 +442,33 @@ body {
     body header .navbar .navbar-collapse .navbar-nav li a {
       padding: 26px 12px; } }
 @media screen and (max-width: 768px) {
-  .navbar .navbar-toggle {
+  body .navbar .navbar-toggle {
     border: none;
     margin-top: 16px; }
-    .navbar .navbar-toggle:hover, .navbar .navbar-toggle:focus, .navbar .navbar-toggle:active {
+    body .navbar .navbar-toggle:hover, body .navbar .navbar-toggle:focus, body .navbar .navbar-toggle:active {
       background: transparent;
       outline: none; }
-    .navbar .navbar-toggle .icon-bar {
+    body .navbar .navbar-toggle .icon-bar {
       background-color: #212121;
       border-radius: 0;
-      height: 3px; } }
+      height: 3px; }
+  body #blog article .right h1 {
+    font-size: 22px; }
+  body #blog article .right p {
+    font-size: 13px; } }
 @media screen and (max-width: 480px) {
   body {
     padding-top: 51px; }
+    body #blog article .left, body #blog article .right {
+      display: block;
+      width: 100%;
+      padding: 0 15px; }
+    body #blog article .thumb {
+      margin-bottom: 20px; }
+    body #blog article .right h1 {
+      font-size: 18px; }
+    body #blog article .right p {
+      font-size: 14px; }
     body header .navbar {
       height: 51px; }
       body header .navbar .navbar-toggle {
@@ -428,15 +478,20 @@ body {
         width: 111%;
         background: #f6f6f6;
         border: none;
-        border-bottom: 1px solid #aaaaaa; }
+        border-bottom: 1px solid #dadada; }
         body header .navbar .navbar-collapse .navbar-nav li {
           width: 33%;
           float: left;
           text-align: center; }
           body header .navbar .navbar-collapse .navbar-nav li a {
-            padding: 15px 0; }
-          body header .navbar .navbar-collapse .navbar-nav li.contact {
-            width: 100%; }
+            padding: 10px 0;
+            border-right: 1px solid #efefef;
+            box-shadow: 1px 0 0 rgba(255, 255, 255, 0.75); }
+          body header .navbar .navbar-collapse .navbar-nav li.blog {
+            margin-left: 16%; }
+          body header .navbar .navbar-collapse .navbar-nav li.contact a {
+            border: none;
+            box-shadow: none; }
       body header .navbar .navbar-brand {
         height: 51px;
         background-position: center center;
