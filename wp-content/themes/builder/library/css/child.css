@@ -345,7 +345,8 @@ body {
           line-height: 1.4;
           font-size: 18px;
           margin: 0;
-          font-weight: 500; }
+          font-weight: 500;
+          height: 50px; }
           body #articles .search-results article .inner .entry-header h1 a {
             color: #1f2a2d; }
       body #articles .search-results article .inner .entry-summary {
@@ -473,6 +474,8 @@ body {
       margin-bottom: 15px; }
       body #people article .inner p {
         font-size: 16px; }
+    body article .inner .entry-header h1 {
+      height: auto; }
     body #press {
       padding: 0; }
       body #press #mobile-filters {
