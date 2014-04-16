@@ -346,8 +346,14 @@ $('input#uwpqsf_id_btn:button').click(function(){
 	});
 }
 
-$('#reset_filter a').attr('href', '/press');
+// Filter reset button fucntionality
+$('#reset_filter a').attr('href', '#').click(function(){
+	alert('click');
+});
 
+$('#c_filter-float').click(function(){
+	alert('click');
+});
 
 }); 
 
