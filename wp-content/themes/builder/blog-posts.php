@@ -30,7 +30,7 @@ Template Name: Blog Page
 							<div class="thumb" style="background: #fff url(<?=$url?>) center center no-repeat; background-size: cover;">&nbsp;</div>
 						</div>
 						<div class="col-sm-8 col-xs-7 right">
-							<h1><?php the_title(); ?></h1>
+							<h1><a href="<?php the_permalink(); ?>" title="<?php the_title(); ?>"><?php the_title(); ?></a></h1>
 							<p class="byline vcard"><?php
    						printf( __( 'Posted <time class="updated" datetime="%1$s" pubdate>%2$s</time> by <span class="author">%3$s</span> <span class="amp"></span>', 'bonestheme' ), get_the_time('Y-m-j'), get_the_time(get_option('date_format')), bones_get_the_author_posts_link());
    						?></p>

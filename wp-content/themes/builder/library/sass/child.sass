@@ -448,8 +448,10 @@ body
 			.right
 				padding-left : 5px
 				h1
-					margin-top: 0
-					font-size: 25px
+					margin-top: -10px
+					a
+						color: $black
+						font-size: 25px
 				p
 					font-size: 14px
 					line-height: 1.5
@@ -460,6 +462,29 @@ body
 						border-bottom: 1px solid #f4f4f4
 						padding-bottom: 5px
 						margin-bottom: 5px
+	#single-post
+		padding: 30px 0
+		background: #efefef
+		article
+			.inner
+				border: 1px solid #dadada
+				background: white
+				padding: 20px 30px
+				h1
+					margin: 0
+					line-height: 1.4
+				.byline
+					font-size: 13px
+					text-transform: uppercase
+					border-bottom: 1px solid #f4f4f4
+					padding-bottom: 5px
+					margin-bottom: 20px
+				p
+					font-size: 18px
+					line-height: 1.7
+					margin-bottom: 30px
+					color: $black
+					font-weight: 300
 
 
 	// FOOTER
@@ -501,7 +526,8 @@ body
 					.navbar-nav
 						li
 							a
-								padding: 26px 12px
+								padding: 26px 8px
+								font-size: 14px
 				// display: none
 		
 
@@ -518,6 +544,10 @@ body
 					background-color: $black
 					border-radius: 0
 					height: 3px
+			.navbar-collapse
+				.navbar-nav
+					li
+						a
 			.navbar-toggle
 				// display: block
 		.collapse
@@ -526,13 +556,16 @@ body
 			article
 				.right
 					h1
-						font-size: 22px
+						a
+							font-size: 22px
 					p
 						font-size: 13px
 
 @media screen and (max-width: 480px)
 	body
 		padding-top: 51px
+		section
+			padding-top: 0!important
 		#blog
 			article
 				.left, .right
