@@ -8,12 +8,12 @@ Template Name: People Page
 
 <section id="people">
 	<div class="container">
-		<header>
-			<h1><?php the_title(); ?></h1>
-			<p class="mission"><?php the_field('team_description'); ?></p>
-		</header>
 		<div class="row">
 			<div class="col-lg-8 col-md-12 col-lg-offset-2">
+				<header>
+					<h1><?php the_title(); ?></h1>
+					<p class="mission"><?php the_field('team_description'); ?></p>
+				</header>
 				<h2 class="header">Partners</h2>
 			</div>
 		</div>
