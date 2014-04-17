@@ -25,7 +25,8 @@ body {
       background: transparent; }
     body header .navbar .navbar-toggle {
       border: none;
-      margin-top: 16px; }
+      margin-top: 16px;
+      margin-right: 5px; }
       body header .navbar .navbar-toggle:hover, body header .navbar .navbar-toggle:focus, body header .navbar .navbar-toggle:active {
         background: transparent;
         outline: none; }
