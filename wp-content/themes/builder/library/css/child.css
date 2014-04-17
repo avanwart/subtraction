@@ -406,7 +406,8 @@ body {
           margin-top: 0; }
           body #blog article .right h1 a {
             color: #212121;
-            font-size: 25px; }
+            font-size: 25px;
+            display: block; }
         body #blog article .right p {
           font-size: 14px;
           line-height: 1.5;
