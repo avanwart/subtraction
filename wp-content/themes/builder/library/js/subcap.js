@@ -347,8 +347,8 @@ $('input#uwpqsf_id_btn:button').click(function(){
 }
 
 // Filter reset button fucntionality
-$('#reset_filter a').attr('href', '/press').click(function(){
-	
+$('#reset_filter a').click(function(){
+	location.reload();
 });
 $('.usearchbtn').click(function(){
 	// alert('click');
