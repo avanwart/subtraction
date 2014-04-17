@@ -596,7 +596,19 @@ body {
             height: 100%;
             padding: 0; }
             body #press .modal .modal-dialog .modal-content .modal-body .filter-box label {
-              width: 50%; }
+              width: 50%;
+              font-size: 11px; }
+            body #press .modal .modal-dialog .modal-content .modal-body .btn-close {
+              position: absolute;
+              top: 5px;
+              margin: 15px;
+              font-size: 14px;
+              color: #777777;
+              font-weight: 400;
+              border: none;
+              padding: 0;
+              right: 0;
+              z-index: 9999; }
       body #press .filter-box .togglecheck > span {
         text-align: center; }
       body #press .filter-box .uform_title {
@@ -622,11 +634,16 @@ body {
           margin: 15px;
           font-size: 14px;
           color: #777777;
-          font-weight: 400; }
+          font-weight: 400;
+          border: none;
+          padding: 0; }
         body #press .filter-box .uform_title > div #c_filter-float {
-          right: 0; }
+          right: -100px;
+          color: white; }
         body #press .filter-box .uform_title > div #reset_filter {
           left: 0; }
+          body #press .filter-box .uform_title > div #reset_filter a {
+            color: #777777; }
       body #press .entry-content {
         height: 100%; }
         body #press .entry-content #uwpqsf_id {

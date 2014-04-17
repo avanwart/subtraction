@@ -35,6 +35,7 @@ get_header(); ?>
 						<div class="modal-dialog">
 							<div class="modal-content">
 								<div class="modal-body">
+									<button type="button" class="btn btn-default btn-close" data-dismiss="modal">Close</button>
 									<div class="entry-content filter-box" style="padding: 0 !important;">
 										<!-- <a href="#" id="clear">Clear</a>
 										<a href="#" id="cancel">Cancel</a> -->
@@ -62,6 +63,7 @@ get_header(); ?>
     	$('.uwpqsf_class').hide();
     	$('.modal .uwpqsf_class').show();
     	// $('#reset_filter a').attr('href', '/press');
+    	$('#c_filter-float').hide();
     });
   </script>
 

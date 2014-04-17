@@ -351,13 +351,15 @@ $('#reset_filter a').attr('href', '/press').click(function(){
 	
 });
 $('.usearchbtn').click(function(){
-	alert('click');
+	// alert('click');
 	$('#modal-id').modal('hide');
 });
 
-$('#c_filter-float').click(function(){
-	alert('click');
+$('#mobile-filters').click(function(){
+	// alert('click');
+	$('#c_filter-float').hide();
 });
+
 
 }); 
 
