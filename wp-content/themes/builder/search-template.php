@@ -42,9 +42,6 @@ get_header(); ?>
 										<?php wp_link_pages( array( 'before' => '<div class="page-links"><span class="page-links-title">' . __( 'Pages:', 'twentythirteen' ) . '</span>', 'after' => '</div>', 'link_before' => '<span>', 'link_after' => '</span>' ) ); ?>
 									</div><!-- .entry-content -->
 								</div>
-								<div class="modal-footer">
-									<button type="button" class="btn btn-default" data-dismiss="modal">Close</button>
-								</div>
 							</div><!-- /.modal-content -->
 						</div><!-- /.modal-dialog -->
 					</div><!-- /.modal -->
@@ -64,7 +61,7 @@ get_header(); ?>
     jQuery(document).ready(function($){
     	$('.uwpqsf_class').hide();
     	$('.modal .uwpqsf_class').show();
-    	$('#reset_filter a').attr('href', '/press');
+    	// $('#reset_filter a').attr('href', '/press');
     });
   </script>
 
