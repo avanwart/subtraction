@@ -288,7 +288,7 @@ if(!class_exists('uwpqsfprocess')){
 	   while ( $query->have_posts() ) {
 	        	$query->the_post();global $post;
 
-	    $givchars = 52; 
+	    $givchars = 60; 
 			$postgiv = get_the_title(); 
 			$modgiv = substr($postgiv, 0, $givchars);
 
