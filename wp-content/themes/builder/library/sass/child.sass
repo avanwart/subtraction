@@ -385,6 +385,8 @@ body
 						top: -1px
 					.entry-header
 						padding: 0 20px
+						max-height: 50px
+						overflow: hidden
 						h1
 							color: $black
 							text-align: left
@@ -404,7 +406,7 @@ body
 					.entry-summary
 						padding: 0 20px
 						color: $black
-						height: 60px
+						height: 90px
 					.artwork
 						margin: 15px 0
 					.meta
@@ -420,6 +422,8 @@ body
 							position: absolute
 							left: 0
 							bottom: 3px
+							max-width: 90px
+							height: auto
 					.date, .author
 						color: #999
 						font-size: 13px
@@ -683,6 +687,7 @@ body
 					.inner
 						.entry-header, .entry-summary
 							height: auto
+							max-height: auto
 		#press
 			padding: 0
 			// MOBILE FILTERS

@@ -344,7 +344,9 @@ body {
         right: -1px;
         top: -1px; }
       body #articles .search-results article .inner .entry-header {
-        padding: 0 20px; }
+        padding: 0 20px;
+        max-height: 50px;
+        overflow: hidden; }
         body #articles .search-results article .inner .entry-header h1 {
           color: #212121;
           text-align: left;
@@ -359,7 +361,7 @@ body {
       body #articles .search-results article .inner .entry-summary {
         padding: 0 20px;
         color: #212121;
-        height: 60px; }
+        height: 90px; }
       body #articles .search-results article .inner .artwork {
         margin: 15px 0; }
       body #articles .search-results article .inner .meta {
@@ -374,7 +376,9 @@ body {
           width: auto;
           position: absolute;
           left: 0;
-          bottom: 3px; }
+          bottom: 3px;
+          max-width: 90px;
+          height: auto; }
       body #articles .search-results article .inner .date, body #articles .search-results article .inner .author {
         color: #999999;
         font-size: 13px; }
@@ -578,7 +582,8 @@ body {
     body article .inner .entry-header h1 {
       height: auto; }
     body #articles .search-results article .inner .entry-header, body #articles .search-results article .inner .entry-summary {
-      height: auto; }
+      height: auto;
+      max-height: auto; }
     body #press {
       padding: 0; }
       body #press #mobile-filters {
