@@ -26,8 +26,7 @@ body {
     body header .navbar .navbar-toggle {
       border: none;
       margin-top: 16px;
-      margin-right: 5px;
-      border: 1px solid red; }
+      margin-right: 5px; }
       body header .navbar .navbar-toggle:hover, body header .navbar .navbar-toggle:focus, body header .navbar .navbar-toggle:active {
         background: transparent;
         outline: none; }
@@ -35,18 +34,18 @@ body {
         background-color: #212121;
         border-radius: 0;
         height: 2px;
-        width: 30px; }
+        width: 26px; }
         body header .navbar .navbar-toggle .icon-bar.one {
-          width: 24px;
+          width: 20px;
           margin-left: 6px; }
         body header .navbar .navbar-toggle .icon-bar.two {
-          width: 30px;
+          width: 26px;
           margin-left: 0; }
         body header .navbar .navbar-toggle .icon-bar.three {
-          width: 15px;
+          width: 11px;
           margin-left: 15px; }
         body header .navbar .navbar-toggle .icon-bar.four {
-          width: 20px;
+          width: 16px;
           margin-left: 10px; }
   body header h1 {
     text-align: left;
@@ -574,6 +573,8 @@ body {
       body #people article .inner p {
         font-size: 16px; }
     body article .inner .entry-header h1 {
+      height: auto; }
+    body #articles .search-results article .inner .entry-header, body #articles .search-results article .inner .entry-summary {
       height: auto; }
     body #press {
       padding: 0; }
