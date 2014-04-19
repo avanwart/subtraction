@@ -26,7 +26,7 @@ body {
     body header .navbar .navbar-toggle {
       border: none;
       margin-top: 16px;
-      margin-right: 5px; }
+      margin-right: 1px; }
       body header .navbar .navbar-toggle:hover, body header .navbar .navbar-toggle:focus, body header .navbar .navbar-toggle:active {
         background: transparent;
         outline: none; }
@@ -502,6 +502,9 @@ body {
     padding-top: 51px; }
     body section {
       padding-top: 0 !important; }
+      body section .container {
+        padding-left: 10px !important;
+        padding-right: 10px !important; }
     body #blog article .left, body #blog article .right {
       display: block;
       width: 100%;
