@@ -344,7 +344,7 @@ body {
         right: -1px;
         top: -1px; }
       body #articles .search-results article .inner .entry-header {
-        padding: 0 20px;
+        padding: 0 15px;
         max-height: 50px;
         overflow: hidden; }
         body #articles .search-results article .inner .entry-header h1 {
@@ -359,9 +359,18 @@ body {
           body #articles .search-results article .inner .entry-header h1 a {
             color: #1f2a2d; }
       body #articles .search-results article .inner .entry-summary {
-        padding: 0 20px;
+        padding: 0 15px;
         color: #212121;
         height: 90px; }
+        body #articles .search-results article .inner .entry-summary .ellipsis {
+          color: #212121; }
+        body #articles .search-results article .inner .entry-summary .more {
+          color: #212121;
+          display: inline-block;
+          font-weight: normal; }
+          body #articles .search-results article .inner .entry-summary .more:hover {
+            color: #212121;
+            text-decoration: underline; }
       body #articles .search-results article .inner .artwork {
         margin: 15px 0; }
       body #articles .search-results article .inner .meta {
@@ -378,10 +387,11 @@ body {
           left: 0;
           bottom: 3px;
           max-width: 90px;
-          height: auto; }
+          height: auto;
+          max-height: 20px; }
       body #articles .search-results article .inner .date, body #articles .search-results article .inner .author {
         color: #999999;
-        font-size: 13px; }
+        font-size: 12px; }
   body #contact {
     background: #efefef;
     padding: 30px 0 50px;

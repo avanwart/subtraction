@@ -288,7 +288,7 @@ if(!class_exists('uwpqsfprocess')){
 	   while ( $query->have_posts() ) {
 	        	$query->the_post();global $post;
 
-	    $givchars = 60; 
+	    $givchars = 52; 
 			$postgiv = get_the_title(); 
 			$modgiv = substr($postgiv, 0, $givchars);
 
@@ -298,13 +298,13 @@ if(!class_exists('uwpqsfprocess')){
 
 			$html .= '<article class="col-sm-6 col-md-4 col-lg-4"><div class="inner">';
 			$html .= '<header class="entry-header">';
-			$html .= '<h1 class="entry-title"><a href="'.get_field('article_url').'" target="_blank">'.$modgiv.'...</a></h1>';
+			$html .= '<h1 class="entry-title"><a href="'.get_field('article_url').'" target="_blank">'.$modgiv.'&#133;</a></h1>';
 			$html .= '</header>';
 			$html .= '<div class="artwork" style="background: url('.get_field('article_image').') 50% 50% no-repeat; background-size: cover; width: 100%; height: 200px;"></div>';
-			$html .= '<p class="entry-summary">'.$modgiv2.'...</p>';
+			$html .= '<p class="entry-summary">'.$modgiv2.'<span class="ellipsis">&#133;</span>&nbsp;<a href="<?php the_permalink(); ?>" class="more"> More &raquo;</a></p>';
 			$html .= '<div class="meta">';
 			$html .= '<img class="publication" src="'.get_field('publication_logo').'">';
-			$html .= '<span class="date">'.get_field('date').'</span>&nbsp;&nbsp;|&nbsp;&nbsp;<span class="author">'.get_field('author_name').'</span>';
+			$html .= '<span class="date">'.get_field('date').'</span>&nbsp;|&nbsp;<span class="author">'.get_field('author_name').'</span>';
 			$html .= '</div>';
 			$html .= '</div></article>';
 				
