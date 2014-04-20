@@ -29,11 +29,11 @@ if(!class_exists('uwpqsfront')){
 				 $html .= '<input type="hidden" name="cmf['.$i.'][metakey]" value="'.$metakey.'">';
 				 $html .= '<input type="hidden" name="cmf['.$i.'][compare]" value="'.$compare.'">';
 				if(!empty($all)){
-				 $html .= '<label><input type="checkbox" id="cmf-'.$i.'" name="cmf['.$i.'][call]" class="chkcmfall" ><span class="chkbox-label">&nbsp; '.$all.'</span></label>';
+				 $html .= '<label><input type="checkbox" id="cmf-'.$i.'" name="cmf['.$i.'][call]" class="chkcmfall" ><span class="chkbox-label"> '.$all.'</span></label>';
 				}				
 				foreach ( $opts as $opt ) {
 						 $val = explode('::',$opt);
-				$html .= '<label><input type="checkbox" id="cmf-'.$i.'" name="cmf['.$i.'][value][]" value="'.$val[0].'" ><span class="chkbox-label">&nbsp; '.$val[1].'</span></label>';	
+				$html .= '<label><input type="checkbox" id="cmf-'.$i.'" name="cmf['.$i.'][value][]" value="'.$val[0].'" ><span class="chkbox-label"> '.$val[1].'</span></label>';	
 					}
 			 	$html .= '</div>';
 				
@@ -90,11 +90,11 @@ if(!class_exists('uwpqsfront')){
 				$html .= '<input  type="hidden" name="taxo['.$c.'][name]" value="'.$taxname.'">';
 				$html .= '<input  type="hidden" name="taxo['.$c.'][opt]" value="'.$opt.'">';
 				if(!empty($taxall)){
-				$html .= '<label><input type="checkbox" id="tchkb-'.$c.'" name="taxo['.$c.'][call]" class="chktaxoall" ><span class="chkbox-label">&nbsp; '.$taxall.'</span></label>';
+				$html .= '<label><input type="checkbox" id="tchkb-'.$c.'" name="taxo['.$c.'][call]" class="chktaxoall" ><span class="chkbox-label"> '.$taxall.'</span></label>';
 				}
 				foreach ( $terms as $term ) {
 				$value = $term->slug;
-				$html .= '<label><input type="checkbox" class="checkbox" id="tchkb-'.$c.'" name="taxo['.$c.'][term][]" value="'.$value.'" ><span class="chkbox-label">&nbsp; '.$term->name.'</span></label>';
+				$html .= '<label><input type="checkbox" class="checkbox" id="tchkb-'.$c.'" name="taxo['.$c.'][term][]" value="'.$value.'" ><span class="chkbox-label"> '.$term->name.'</span></label>';
 				}
 				$html .= '</div>';
 				return  apply_filters( 'uwpqsf_tax_field_checkbox', $html ,$type,$exc,$hide,$taxname,$taxlabel,$taxall,$opt,$c,$defaultclass,$formid,$divclass);
