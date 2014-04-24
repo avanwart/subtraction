@@ -715,6 +715,17 @@ body {
           width: 50%;
           font-weight: 400;
           margin-bottom: 15px; }
+    body #contact .social {
+      text-align: center; }
+      body #contact .social ul li {
+        float: left;
+        margin: 0 5px; }
+        body #contact .social ul li a {
+          width: 32px;
+          height: 32px;
+          background-size: 32px 32px; }
+          body #contact .social ul li a:hover {
+            opacity: 0.89; }
     body .footer nav a {
       padding: 0 5px;
       font-size: 13px; } }
