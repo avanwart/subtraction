@@ -10,7 +10,7 @@ Template Name: Contact Page
 	<div class="container">
 		<?php if (have_posts()) : while (have_posts()) : the_post(); ?>
 		<div class="row">
-			<div class="col-lg-8 col-lg-offset-2 mantra">
+			<div class="col-lg-8 col-lg-offset-2 col-md-10 col-md-offset-1 mantra">
 				<header>
 					<h1><?php the_title(); ?></h1>
 				</header>
