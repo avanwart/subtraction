@@ -426,7 +426,7 @@ body {
             text-indent: -9999px;
             overflow: hidden; }
             body #contact .social ul li a:hover {
-              opacity: 0.9; }
+              opacity: 0.89; }
           body #contact .social ul li.facebook a {
             background-image: url("../images/facebook-icon.jpg"); }
           body #contact .social ul li.linkedin a {

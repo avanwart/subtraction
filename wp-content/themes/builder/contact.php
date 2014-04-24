@@ -17,6 +17,7 @@ Template Name: Contact Page
 				<p><?php the_field('subtraction_mantra'); ?></p>
 				<p>If you are interested in connecting with or learning more about Subtraction Capital, use the form or send us an email:
 <a href="mailto:info@subtractioncaptial.com">info@subtractioncapital.com</a>.</p>
+				<!-- Begin Social Icons -->
 				<div class="social">
 					<ul>
 						<li class="facebook"><a href="https://www.facebook.com/subtractioncapital" target="_blank">Facebook</a></li>
