@@ -301,7 +301,7 @@ if(!class_exists('uwpqsfprocess')){
 			$html .= '<h1 class="entry-title"><a href="'.get_field('article_url').'" target="_blank">'.$modgiv.'&#133;</a></h1>';
 			$html .= '</header>';
 			$html .= '<div class="artwork" style="background: url('.get_field('article_image').') 50% 50% no-repeat; background-size: cover; width: 100%; height: 200px;"></div>';
-			$html .= '<p class="entry-summary">'.$modgiv2.'<span class="ellipsis">&#133;</span>&nbsp;<a href="<?php the_permalink(); ?>" class="more"> More &raquo;</a></p>';
+			$html .= '<p class="entry-summary">'.$modgiv2.'<span class="ellipsis">&#133;</span></p>';
 			$html .= '<div class="meta">';
 			$html .= '<img class="publication" src="'.get_field('publication_logo').'">';
 			$html .= '<span class="date">'.get_field('date').'</span>&nbsp;|&nbsp;<span class="author">'.get_field('author_name').'</span>';
