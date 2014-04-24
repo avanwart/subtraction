@@ -433,6 +433,10 @@ body {
             background-image: url("../images/linkedin-icon.jpg"); }
           body #contact .social ul li.twitter a {
             background-image: url("../images/twitter-icon.jpg"); }
+          body #contact .social ul li.angellist a {
+            background-image: url("../images/angellist-icon.jpg"); }
+          body #contact .social ul li.crunchbase a {
+            background-image: url("../images/crunchbase-icon.png"); }
   body #blog {
     background: #efefef;
     padding: 30px 0; }
