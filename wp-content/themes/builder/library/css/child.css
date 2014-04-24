@@ -406,6 +406,33 @@ body {
       font-size: 18px;
       line-height: 1.6;
       margin-bottom: 24px; }
+    body #contact .social {
+      text-align: center; }
+      body #contact .social ul {
+        list-style-type: none;
+        display: inline-block;
+        margin: 20px 0;
+        padding: 0; }
+        body #contact .social ul li {
+          float: left;
+          margin: 0 10px; }
+          body #contact .social ul li a {
+            display: block;
+            width: 48px;
+            height: 48px;
+            background-size: 48px 48px;
+            background-repeat: no-repeat;
+            background-position: center center;
+            text-indent: -9999px;
+            overflow: hidden; }
+            body #contact .social ul li a:hover {
+              opacity: 0.9; }
+          body #contact .social ul li.facebook a {
+            background-image: url("../images/facebook-icon.jpg"); }
+          body #contact .social ul li.linkedin a {
+            background-image: url("../images/linkedin-icon.jpg"); }
+          body #contact .social ul li.twitter a {
+            background-image: url("../images/twitter-icon.jpg"); }
   body #blog {
     background: #efefef;
     padding: 30px 0; }
