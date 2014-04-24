@@ -175,9 +175,31 @@ function bones_wpsearch($form) {
 } // don't remove this bracket!
 
 */
+
+// Excerpt Length
 function custom_excerpt_length( $length ) {
 	return 42;
 }
 add_filter( 'excerpt_length', 'custom_excerpt_length', 999 );
+
+
+// Gestures
+function vsgt_enqueue_scripts() {
+    // Register Hammer.js from external link
+    // wp_register_script( 'hammer', 'http://rawgit.com/EightMedia/hammer.js/1.0.10/hammer.min.js' );
+ 
+    // Register jQuery Hammer from external link
+    // Set jQuery and Hammer as dependencies so that we only enqueue this and we get them all
+    // wp_register_script( 'jquery_hammer', get_template_directory_uri() . '/library/js/jquery.hammer.js', array( 'jquery', 'hammer' ) );
+ 
+    // Enqueue our scripts
+    // wp_enqueue_script( 'jquery_hammer' );
+
+    // Register our Custom JS Script
+		// wp_register_script( 'swipe_js', get_template_directory_uri() . '/library/js/swipe.js', array( 'jquery_hammer' ), '1.0', true );
+		// wp_enqueue_script( 'swipe_js' );
+}
+add_action( 'wp_enqueue_scripts', 'vsgt_enqueue_scripts' );
+
 
 ?>
