@@ -20,6 +20,11 @@ get_header(); ?>
 			</header>
 		</div>
 	</div>
+	<div class="row">
+		<div class="col-lg-8 col-lg-offset-2 col-md-10 col-md-offset-1">
+			<h2 class="intro"><?php the_field('intro_text'); ?></h2>
+		</div>
+	</div>
 		<div class="row">
 			<div class="col-sm-12" id="press-filters">
 				<?php while ( have_posts() ) : the_post(); ?>
