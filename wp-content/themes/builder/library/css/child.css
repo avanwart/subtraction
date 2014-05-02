@@ -732,9 +732,15 @@ body {
           padding: 60px 15px 0;
           height: 100%; }
         body #press .entry-content #uwpqsf_id_btn {
-          width: 100%;
+          background: #222222;
+          text-shadow: none;
+          border: none;
+          color: white;
+          font-weight: normal;
+          width: 90%;
           bottom: 0;
-          margin: 0; }
+          margin: 0;
+          margin-left: 5%; }
         body #press .entry-content [class*='tax-check-'] label {
           width: 50%;
           font-weight: 400;
