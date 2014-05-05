@@ -683,13 +683,13 @@ body {
         margin: 0 !important; }
         body #press .modal .modal-dialog {
           padding: 0;
-          height: 100%; }
+          height: auto; }
           body #press .modal .modal-dialog .modal-content {
             border-radius: 0;
-            height: 100%;
+            height: auto;
             border: none; }
             body #press .modal .modal-dialog .modal-content .modal-body {
-              height: 100%;
+              height: auto;
               padding: 0; }
               body #press .modal .modal-dialog .modal-content .modal-body .filter-box label {
                 width: 50%;
@@ -757,7 +757,9 @@ body {
         body #press .entry-content [class*='tax-check-'] label {
           width: 50%;
           font-weight: 400;
-          margin-bottom: 15px; }
+          margin-bottom: 8px; }
+          body #press .entry-content [class*='tax-check-'] label input {
+            margin-top: -2px; }
     body #contact .social {
       text-align: center; }
       body #contact .social ul li {
