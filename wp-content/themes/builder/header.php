@@ -14,8 +14,8 @@
 	<title><?php wp_title(''); ?></title>
 
 	<!-- mobile meta (hooray!) -->
-	<meta name="HandheldFriendly" content="True">
-	<meta name="MobileOptimized" content="320">
+	<!-- <meta name="HandheldFriendly" content="True">
+	<meta name="MobileOptimized" content="320"> -->
 	<meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=no" />
 
 	<!-- icons & favicons (for more: http://www.jonathantneal.com/blog/understand-the-favicon/) -->

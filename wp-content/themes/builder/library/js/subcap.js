@@ -291,7 +291,7 @@ $('input#uwpqsf_id_btn:button').click(function(){
 	
 
 	
-	$('.uform_title > div:first-child').html("<div id='filter-float'>Filters</div><div id='c_filter-float'>Cancel</div><div id='reset_filter'><a href='.'</a>Reset</a></div>");
+	$('.uform_title > div:first-child').html("<div id='filter-float'>Filters</div><div id='reset_filter'><a href='.'</a>Reset</a></div>");
 
 	  $("#c_filter-float").hide(); // Hide Cancel Filter Button
 	  $("#reset_filter").hide(); // Hide Reset Button

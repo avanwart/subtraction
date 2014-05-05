@@ -284,6 +284,8 @@ body
 	#press
 		background: #efefef
 		padding: 30px 0 0
+		.entry-content
+			height: auto
 		h2.intro
 			margin-top: 0
 			text-align: center
@@ -336,6 +338,8 @@ body
 			.uwpqsf_submit
 				display: block
 				height: 60px
+				position: relative!important
+				margin-top: 20px
 			#uwpqsf_id_btn
 				font-family: 'Helvetica Neue', sans-serif
 				border-radius: 2px
@@ -668,6 +672,11 @@ body
 @media screen and (max-width: 480px)
 	body
 		padding-top: 51px
+		overflow-x: hidden
+		&.modal-open .navbar-fixed-top, .modal-open .navbar-fixed-bottom
+			margin-right: 0
+			position: fixed
+			overflow: hidden
 		section
 			padding-top: 0!important
 			.container
@@ -781,6 +790,10 @@ body
 				z-index: 99
 				padding: 6px 30px
 			.modal
+				max-width: 100%
+				max-height: 420px
+				overflow-y: auto
+				margin: 0!important
 				.modal-dialog
 					padding: 0
 					height: 100%
@@ -845,8 +858,8 @@ body
 			.entry-content
 				height: 100%
 				#uwpqsf_id
-					padding: 60px 15px 0
-					height: 100%
+					padding: 50px 15px 0
+					
 				#uwpqsf_id_btn
 					background: #222
 					text-shadow: none
