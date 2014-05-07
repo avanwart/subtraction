@@ -615,12 +615,12 @@ body {
         border: none;
         border-bottom: 1px solid #dadada; }
         body header .navbar .navbar-collapse .navbar-nav li {
-          width: 33%;
+          width: 50%;
           float: left;
           text-align: center; }
           body header .navbar .navbar-collapse .navbar-nav li a {
             font-size: 13px;
-            padding: 10px 0;
+            padding: 8px 0;
             border-right: 1px solid #efefef;
             box-shadow: 1px 0 0 rgba(255, 255, 255, 0.75); }
           body header .navbar .navbar-collapse .navbar-nav li.blog {
