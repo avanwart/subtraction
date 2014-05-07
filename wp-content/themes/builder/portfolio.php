@@ -21,9 +21,13 @@ Template Name: Portfolio Page
 </section>
 <section id="portfolio">
 	<div class="container">
-		<header>
-			<h1><?php the_title(); ?> <small>(alphabetical)</small></h1>
-		</header>
+		<div class="row">
+			<div class="col-sm-12">
+				<header>
+					<h1><?php the_title(); ?> <small>(alphabetical)</small></h1>
+				</header>
+			</div>
+		</div>
 		<div class="row">
 			<!-- Start the Loop to query portfolio posts -->
 			<?php
