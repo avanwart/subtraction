@@ -20,7 +20,7 @@ Template Name: Contact Page
 				<div class="social">
 					<ul>
 						<li class="facebook"><a href="https://www.facebook.com/subtractioncapital" target="_blank">Facebook</a></li>
-						<li class="linkedin"><a href="http://www.linkedin.com/company/subtraction-capital" target="_blank">LinkedIn</a></li>
+						<li class="linkedin"><a href="https://www.linkedin.com/company/subtractioncapital" target="_blank">LinkedIn</a></li>
 						<li class="twitter"><a href="https://twitter.com/SubtractionCap" target="_blank">Twitter</a></li>
 						<li class="angellist"><a href="https://angel.co/subtraction-capital" target="_blank">Angel List</a></li>
 						<li class="crunchbase"><a href="http://www.crunchbase.com/organization/subtraction-capital" target="_blank">Crunch Base</a></li>
