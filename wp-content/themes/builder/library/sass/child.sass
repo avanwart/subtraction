@@ -670,18 +670,23 @@ body
 						font-size: 13px
 
 @media screen and (max-width: 480px)
+	html
+		position: relative
 	body
 		padding-top: 51px
 		overflow-x: hidden
 		&.modal-open .navbar-fixed-top, .modal-open .navbar-fixed-bottom
 			margin-right: 0
-			position: fixed
+			position: absolute
 			overflow: hidden
 		section
 			padding-top: 0!important
 			.container
-				padding-left: 10px!important
-				padding-right: 10px!important
+				padding-left: 0px!important
+				padding-right: 0px!important
+				.row
+					margin-left: 0!important
+					margin-right: 0!important
 		#blog
 			article
 				.left, .right
@@ -791,15 +796,14 @@ body
 				padding: 6px 30px
 			.modal
 				max-width: 100%
-				max-height: 420px
 				overflow-y: auto
 				margin: 0!important
 				.modal-dialog
 					padding: 0
-					height: auto
+					height: 100%
 					.modal-content
 						border-radius: 0
-						height: auto
+						height: 100%
 						border: none
 						.modal-body
 							height: auto
