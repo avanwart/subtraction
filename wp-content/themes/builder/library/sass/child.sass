@@ -177,12 +177,14 @@ body
 			font-size: 21px
 			color: $black
 			line-height: 1.5
+			font-weight: 100
 		blockquote
 			border: none
 			font-size: 21px
 			text-align: right
 			color: #999
 			line-height: 2
+			font-weight: 100
 			small
 				color: #777
 
@@ -652,10 +654,10 @@ body
 					background-color: $black
 					border-radius: 0
 					height: 3px
-			.navbar-collapse
-				.navbar-nav
-					li
-						a
+			// .navbar-collapse
+			// 	.navbar-nav
+			// 		li
+			// 			a
 			.navbar-toggle
 				// display: block
 		.collapse
@@ -668,6 +670,18 @@ body
 							font-size: 22px
 					p
 						font-size: 13px
+
+@media screen and (min-width: 481px) and (orientation:landscape) and (max-width: 580px)
+	body
+		#portfolio
+			.container
+				.row
+					.col-xs-12
+						width: 50%
+						float: left
+						.face
+							p
+								font-size: 16px
 
 @media screen and (max-width: 568px)
 	html
@@ -725,8 +739,8 @@ body
 							// &.blog
 							// 	margin-left: 16%
 							&.contact
-								display: none
-								width: 100%
+								// display: none
+								// width: 100%
 								a
 									border: none
 									box-shadow: none

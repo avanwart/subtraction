@@ -152,13 +152,15 @@ body {
     body #hero h1 {
       font-size: 21px;
       color: #212121;
-      line-height: 1.5; }
+      line-height: 1.5;
+      font-weight: 100; }
     body #hero blockquote {
       border: none;
       font-size: 21px;
       text-align: right;
       color: #999999;
-      line-height: 2; }
+      line-height: 2;
+      font-weight: 100; }
       body #hero blockquote small {
         color: #777777; }
   body #portfolio {
@@ -575,6 +577,12 @@ body {
     font-size: 22px; }
   body #blog article .right p {
     font-size: 13px; } }
+@media screen and (min-width: 481px) and (orientation: landscape) and (max-width: 580px) {
+  body #portfolio .container .row .col-xs-12 {
+    width: 50%;
+    float: left; }
+    body #portfolio .container .row .col-xs-12 .face p {
+      font-size: 16px; } }
 @media screen and (max-width: 568px) {
   html {
     position: relative; }
@@ -623,12 +631,9 @@ body {
             padding: 8px 0;
             border-right: 1px solid #efefef;
             box-shadow: 1px 0 0 rgba(255, 255, 255, 0.75); }
-          body header .navbar .navbar-collapse .navbar-nav li.contact {
-            display: none;
-            width: 100%; }
-            body header .navbar .navbar-collapse .navbar-nav li.contact a {
-              border: none;
-              box-shadow: none; }
+          body header .navbar .navbar-collapse .navbar-nav li.contact a {
+            border: none;
+            box-shadow: none; }
       body header .navbar .navbar-brand {
         height: 51px;
         background-position: center center;
