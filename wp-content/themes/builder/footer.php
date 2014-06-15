@@ -21,7 +21,14 @@
 		<!-- all js scripts are loaded in library/bones.php -->
 		<?php wp_footer(); ?>
 		<script src="<?php bloginfo('template_directory'); ?>/library/js/subcap.js"></script>
-
+		<script>
+			jQuery(document).ready(function($){
+				$('.navbar-toggle').bind( "touchstart", function(e){
+	    		e.preventDefault();
+	    		$('.navbar-collapse').collapse('toggle');
+	    	});
+			});
+		</script>
 	</body>
 
 </html> <!-- end page. what a ride! -->

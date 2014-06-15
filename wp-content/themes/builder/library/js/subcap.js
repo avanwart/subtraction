@@ -136,7 +136,7 @@ $('input#uwpqsf_id_btn:button').click(function(){
 	$("#filter-float").show();
 
 
-	if (win_width > 349) {  
+	if (win_width > 580) {  
 
 			
 				taxoCompany = $("article > .entry-content .taxolabel-0").text()
@@ -269,7 +269,7 @@ $('input#uwpqsf_id_btn:button').click(function(){
 
 
 
-  if (win_width > 349) {  // Is NOT Mobile
+  if (win_width > 580) {  // Is NOT Mobile
 
 	
 

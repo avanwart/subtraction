@@ -575,7 +575,7 @@ body {
     font-size: 22px; }
   body #blog article .right p {
     font-size: 13px; } }
-@media screen and (max-width: 480px) {
+@media screen and (max-width: 568px) {
   html {
     position: relative; }
 
@@ -623,11 +623,12 @@ body {
             padding: 8px 0;
             border-right: 1px solid #efefef;
             box-shadow: 1px 0 0 rgba(255, 255, 255, 0.75); }
-          body header .navbar .navbar-collapse .navbar-nav li.blog {
-            margin-left: 16%; }
-          body header .navbar .navbar-collapse .navbar-nav li.contact a {
-            border: none;
-            box-shadow: none; }
+          body header .navbar .navbar-collapse .navbar-nav li.contact {
+            display: none;
+            width: 100%; }
+            body header .navbar .navbar-collapse .navbar-nav li.contact a {
+              border: none;
+              box-shadow: none; }
       body header .navbar .navbar-brand {
         height: 51px;
         background-position: center center;
@@ -691,7 +692,7 @@ body {
           height: 100%; }
           body #press .modal .modal-dialog .modal-content {
             border-radius: 0;
-            height: 100%;
+            height: auto;
             border: none; }
             body #press .modal .modal-dialog .modal-content .modal-body {
               height: auto;
