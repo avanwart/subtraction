@@ -4,8 +4,11 @@ $darkBlue: #1f2a2d
 
 body
 	-webkit-font-smoothing: antialiased
-	font-family: 'Lato', sans-serif
+	font-family: 'azo-sans-web', sans-serif
 	padding-top: 72px
+
+	h1, h2, h3, h4, h5
+		font-family: 'azo-sans-web', sans-serif
 
 	// HEADER
 	header
@@ -29,7 +32,7 @@ body
 							padding: 26px 20px
 							font-size: 14px
 							color: #333
-							font-weight: 600
+							font-weight: normal
 							text-transform: uppercase
 							&:hover
 								color: $blue
@@ -177,14 +180,14 @@ body
 			font-size: 21px
 			color: $black
 			line-height: 1.5
-			font-weight: 100
+			font-weight: 300
 		blockquote
 			border: none
-			font-size: 21px
+			font-size: 19px
 			text-align: right
 			color: #999
 			line-height: 2
-			font-weight: 100
+			font-weight: 300
 			small
 				color: #777
 
@@ -593,6 +596,18 @@ body
 					color: $black
 					font-weight: 300
 
+	// SUBSCRIBE
+	#subscribe
+		padding: 1em 0
+		background: #fff
+		// box-shadow: 0 -1px 8px rgba(0, 0, 0, .2)
+		// border-top: 1px solid #ccc
+		.sidebar
+			float: none
+			width: 100%
+			background: none
+			border: none
+			box-shadow: none
 
 	// FOOTER
 	.footer

@@ -1,3 +1,12 @@
+			<section id="subscribe">
+				<div class="container">
+					<div class="row">
+						<div class="col-sm-12 col-lg-6 col-lg-offset-3 col-md-8 col-md-offset-2">
+							<?php get_sidebar(); ?>
+						</div>
+					</div>
+				</div>
+			</section>
 			<footer class="footer" role="contentinfo">
 
 				<div class="container">

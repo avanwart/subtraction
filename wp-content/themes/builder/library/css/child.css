@@ -1,7 +1,9 @@
 body {
   -webkit-font-smoothing: antialiased;
-  font-family: "Lato", sans-serif;
+  font-family: "azo-sans-web", sans-serif;
   padding-top: 72px; }
+  body h1, body h2, body h3, body h4, body h5 {
+    font-family: "azo-sans-web", sans-serif; }
   body header .navbar {
     background: white;
     background: rgba(255, 255, 255, 0.9);
@@ -19,7 +21,7 @@ body {
       padding: 26px 20px;
       font-size: 14px;
       color: #333333;
-      font-weight: 600;
+      font-weight: normal;
       text-transform: uppercase; }
       body header .navbar .navbar-collapse .navbar-nav li a:hover {
         color: #0072c4; }
@@ -153,14 +155,14 @@ body {
       font-size: 21px;
       color: #212121;
       line-height: 1.5;
-      font-weight: 100; }
+      font-weight: 300; }
     body #hero blockquote {
       border: none;
-      font-size: 21px;
+      font-size: 19px;
       text-align: right;
       color: #999999;
       line-height: 2;
-      font-weight: 100; }
+      font-weight: 300; }
       body #hero blockquote small {
         color: #777777; }
   body #portfolio {
@@ -532,6 +534,15 @@ body {
         margin-bottom: 30px;
         color: #212121;
         font-weight: 300; }
+  body #subscribe {
+    padding: 1em 0;
+    background: white; }
+    body #subscribe .sidebar {
+      float: none;
+      width: 100%;
+      background: none;
+      border: none;
+      box-shadow: none; }
   body .footer {
     margin-top: 0;
     border: none;
